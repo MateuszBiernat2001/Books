@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="form-container">            
+        <h1>Biblioteka Książek</h1>
+        <input type="text" class="bookTitle" placeholder="Wpisz tytuł książki ...">
+        <input type="text" class="bookAuthorName" placeholder="Wpisz nazwisko autora ...">
+        <label for="priority">Priorytet przeczytania:</label>
+        <select id="priority">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <label for="category">Kategoria :</label>
+        <select id="category">
+          <option>romans</option>
+          <option>thriller</option>
+          <option>fantasy</option>
+         </select> 
+         <h3 class="alert-info"></h3>
+        <button class="add-btn">Dodaj</button>
+        
+    </div>
+    <div class="items-container">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
