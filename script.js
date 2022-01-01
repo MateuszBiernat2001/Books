@@ -1,4 +1,11 @@
-const container  = document.querySelector('.items-container')   
+ container  = document.querySelector('.items-container')
+const formContainer = document.querySelector('.form-container')
+const plusIcon = document.querySelector('.plus-icon');
+
+
+const showForm = () => {
+    formContainer.classList.toggle('remove')
+}
 
 const getBooksFromStorage = () => {
     const booksFromStorage = localStorage.getItem('books');
@@ -73,8 +80,9 @@ const addNewItem = () => {
         categoryOptions.value = '';
 
     }else{
-        alertInfo.textContent = 'Coś jest nie tak'
+        alertInfo.textContent = 'Uzupełnij dane !'
     }
 }
 
 document.addEventListener('DOMContentLoaded' , main)
+plusIcon.addEventListener('click', showForm)
